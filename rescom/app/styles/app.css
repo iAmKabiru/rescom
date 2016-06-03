@@ -1,0 +1,397 @@
+/*
+//============================================================+
+// File name   : app.css
+//
+// Description : App CSS
+//
+// Author: Ozoka Lucky Orobo
+//
+// (c) Copyright:
+//               GenTech
+//
+//============================================================+
+*/
+
+html {
+	position: relative;
+  	min-height: 100%;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #f8f8f8;
+	margin-bottom: 60px;
+}
+
+div.login-frame {
+	margin: 0 auto;
+	margin-top: 8%;
+	height: auto;
+	width: 40%;
+}
+
+.logo-heading div.sch-name {
+	float: right;
+	text-transform: uppercase;
+	font-family: "Myriad Pro";
+}
+
+div.login-panel {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+div.login-panel .panel-title {
+	text-align: left;
+}
+
+.page-info {
+	width: 100%;
+	height: 30px;
+	background: gray;
+	color: white;
+	text-align: left;
+	padding: 5px;
+	margin-top: 5%;
+}
+
+.login-info {
+	width: 90%;
+	height: 5%;
+	margin: 0 auto;
+	background-color: #31708f;
+	/* #a94442 */
+	color: white;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 10px;
+}
+
+button:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	-moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.login-form {
+	margin-top: 5%;
+}
+
+.header {
+	background-color: #eeeeee;
+	width: 100%;
+	height: 60px;	
+	color: #d50000;
+	position: fixed;
+	z-index: 999;
+}
+
+#confirmModal,
+#infoModal {
+	z-index: 999999;
+	text-align: left;
+}
+
+.header .header-left {
+	float: left;
+}
+
+.header .header-left span#sch-name {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "Myriad Pro";
+}
+
+.header .header-right {
+	float: right;
+	height: 60px;
+	font-weight: 700;
+}
+
+.header-right ul {
+	list-style-type: none;
+	height: 60px;
+}
+
+.header-right ul > li {
+	display: inline-block;
+}
+
+.header-right ul > li#profile {
+	margin-left: 20px;
+	margin-right: 20px;	
+	padding-top: 20px;
+	width: 50px;
+	height: 60px;
+	position: relative;
+}
+
+.header-right ul li#profile:hover {
+	cursor: pointer;
+	background-color: #9e9e9e;
+}
+
+.header-right ul > li ul {
+	display: none;
+	width: 160px;
+	position: absolute;
+	background-color: #fff;
+	list-style-type: none;
+	top: 40px;
+	left: -120px;
+	padding: 10px;
+	text-align: left;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	-moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.header-right ul > li ul > li {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.header-right ul > li ul > li:hover{
+	cursor: pointer;
+	background-color: #9e9e9e;
+}
+
+.header-right ul > li ul > li a {
+	text-decoration: none;
+	color: #d50000;
+	font-family: "Myriad Pro";
+}
+
+.side-bar {
+	width: 20%;
+	float: left;
+	background-color: #eeeeee;
+	box-shadow: 0 18px 50px 0 rgba(0,0,0,0.2), 0 6px 18px 0 rgba(0,0,0,0.19);
+	-webkit-box-shadow: 0 18px 50px 0 rgba(0,0,0,0.2), 0 6px 18px 0 rgba(0,0,0,0.19);
+	-moz-box-shadow: 0 18px 50px 0 rgba(0,0,0,0.2), 0 6px 18px 0 rgba(0,0,0,0.19);
+	height: 100%;
+	min-height: 1000px;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	top: 60px;
+}
+
+.side-bar ul li {
+	width: 100%;
+	border-bottom: 2px solid #e0e0e0;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+.side-bar ul li:hover,
+.side-bar ul li a:hover {
+	background-color: #4caf50;
+	color: #fff;
+}
+
+.side-bar ul li:hover {
+	box-shadow: 0 18px 50px 0 rgba(0,0,0,0.2), 0 6px 18px 0 rgba(0,0,0,0.19);
+	-moz-box-shadow: 0 18px 50px 0 rgba(0,0,0,0.2), 0 6px 18px 0 rgba(0,0,0,0.19);
+	-webkit-box-shadow: 0 18px 50px 0 rgba(0,0,0,0.2), 0 6px 18px 0 rgba(0,0,0,0.19);
+}
+
+.side-bar ul li a {
+	font-family: "Myriad Pro";
+	font-size: 18px;
+}
+
+.side-bar ul li.current {
+	background-color: #4caf50;
+}
+
+.side-bar ul li.current a {
+	color: #fff;
+}
+
+.content {
+	width: 80%;
+	float: right;
+	height: 100%;
+	padding: 20px;
+	text-align: left;
+	font-family: "Myriad Pro";
+	margin-top: 5%;
+}
+
+.content .section-panel {
+	margin-bottom: 100px;
+}
+
+.content .section-panel .panel-heading {
+	background-color: #4caf50;
+	color: #ffffff;
+}
+
+.content .search-box {
+	margin-top: 10px;
+	width: 50%;
+	height: auto;
+	padding: 10px;
+	padding-left: 30px;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	display: none;
+}
+
+.content .search-box input,
+.content .search-box select {
+	margin-right: 10px;
+}
+
+.content p {
+	line-height: 1.8em;
+}
+
+.content input,
+.content select,
+.content textarea {
+	width: 50%;
+}
+
+.content .section-panel .action-panel {
+	margin-left: 10%;
+	text-align: center;
+}
+
+.action-panel #addstaff-admin,
+.action-panel #addstudent-admin {
+	display: none;
+}
+
+.action-panel .button-group > button {
+	margin-right: 10px;
+}
+
+.action-panel .passport-preview {
+	margin: 0 auto 2% 30%;
+	width: 250px;
+	height: 250px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	display: none;
+}
+
+.getstd {
+	margin-top: 20px;
+}
+
+.getstd input,
+.getstd select {
+	margin-right: 150px;
+	width: 100px;
+}
+
+.students-list,
+.studentsresult-list{
+	padding: 20px;
+	text-align: left;
+	margin-top: 5%;
+	margin-left: -10%;
+}
+
+.compile-panel {
+
+}
+
+.right {
+	float: right;
+}
+
+#student-table thead {
+	background-color: #4caf50;
+	color: #ffffff;
+}
+
+#student-table td.notcompiled {
+	background-color: #b71c1c;
+	color: #fff;
+}
+
+#student-table td.compiled {
+	background-color: #1b5e20;
+	color: #fff;
+}
+
+#student-table td button {
+	margin-left: 10px;
+}
+
+#getstdresults-form {
+	display: none;
+}
+
+.manage-sec {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 3%;
+}
+
+.manage-sec .manage-sidebar {
+
+}
+
+.manage-sidebar li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.manage-sidebar li a {
+	font-size: 1.2em;
+}
+
+.manage-action {
+	margin-top: 2%;
+}
+
+.add-session,
+.remove-user,
+.edit-user {
+	margin-top: 5%;
+}
+
+.add-to-session,
+.remove-user,
+.edit-user {
+	display: none;
+}
+
+#form-table td input {
+	width: 100%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #eeeeee;
+	padding: 20px;
+	font-weight: bolder;
+	z-index: 999;
+	text-align: center;
+	margin: 0;
+}
