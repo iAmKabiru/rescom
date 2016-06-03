@@ -15,7 +15,7 @@ class DBUtils
 	function __construct()
 	{
 		try {
-			self::$dbh = new PDO("mysql:host=localhost;dbname=res_db", "root", "this.mysql");	
+			self::$dbh = new PDO("mysql:host=localhost;dbname=res_db", "root", "");	
 		} catch (PDOException $ex) {
 			die($ex->getMessage());	
 		}
